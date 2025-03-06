@@ -8,7 +8,14 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='css/styles.css') }}"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -19,15 +26,31 @@
         />
         <h1>Welcome to My Portfolio</h1>
         <p>I'm a passionate developer!</p>
+        <button id="theme-toggle">Toggle Theme</button>
       </div>
     </header>
 
     <section class="about">
       <h2>About Me</h2>
       <p>
-        Hi, I'm [Your Name]. I love building web applications and creating
-        beautiful user interfaces.
+        Hi, I'm Okanlawon Paul Feyisayo. I love building web applications and
+        creating beautiful user interfaces. I'm a Python/Flask backend developer
+        with over two years of experience building web applications and APIs. My
+        technical expertise includes Python, Flask, RESTful APIs, and SQL
+        databases like PostgreSQL and MySQL. I'm also proficient in version
+        control systems such as Git. Beyond technical skills, I value teamwork,
+        clear communication, and problem-solving. I enjoy breaking down complex
+        issues and finding efficient solutions. I take pride in writing clean,
+        maintainable code that other developers can easily understand. I'm also
+        a fast learner, quickly adapting to new technologies and frameworks as
+        needed.
       </p>
+    </section>
+    <section class="skills">
+      <h2>My Skills</h2>
+      <div id="skills-list">
+        <!-- Skills will be dynamically loaded here -->
+      </div>
     </section>
 
     <section class="projects">
@@ -60,13 +83,15 @@
 
     <footer>
       <div class="social-links">
-        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank"
+        <a href="https://github.com/paulokla" target="_blank">GitHub</a>
+        <a
+          href="https://www.linkedin.com/in/paul-okanlawon-23883423a/"
+          target="_blank"
           >LinkedIn</a
         >
-        <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+        <a href="https://twitter.com/paul_okanlawon" target="_blank">Twitter</a>
       </div>
-      <p>&copy; 2023 Your Name. All rights reserved.</p>
+      <p>&copy; 2025 Paulokla. All rights reserved.</p>
     </footer>
 
     <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>

@@ -1,15 +1,18 @@
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
-  color: #333;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text */
+  line-height: 1.6;
 }
 
+/* Header */
 header {
-  background: #6200ea;
-  color: white;
-  padding: 60px 20px;
+  background: linear-gradient(135deg, #1e1e1e, #121212); /* Dark gradient */
+  color: #ffffff; /* White text */
+  padding: 80px 20px;
   text-align: center;
   animation: fadeIn 2s ease-in-out;
 }
@@ -27,54 +30,122 @@ header {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 4px solid white;
+  border: 4px solid #333; /* Darker border */
   margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.profile img {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Darker shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile img:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7); /* Darker shadow on hover */
 }
 
+.profile h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.profile p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Sections */
 .about,
-.projects {
-  padding: 40px 20px;
+.skills,
+.projects,
+.contact {
+  padding: 60px 20px;
   text-align: center;
+  background-color: #1e1e1e; /* Dark background for sections */
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Darker shadow */
 }
 
+.about h2,
+.skills h2,
+.projects h2,
+.contact h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #bb86fc; /* Accent color for headings */
+}
+
+.about p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #e0e0e0; /* Light text */
+}
+
+/* Skills Section */
+#skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  background: #333; /* Darker background for skill cards */
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Darker shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #e0e0e0; /* Light text */
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); /* Darker shadow on hover */
+}
+
+/* Projects Section */
 .project-card {
-  background: white;
+  background: #333; /* Darker background for project cards */
   margin: 20px auto;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Darker shadow */
   max-width: 600px;
   transition: transform 0.3s ease;
 }
 
-.project-card:hover {
-  transform: scale(1.05);
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #bb86fc; /* Accent color for project titles */
 }
 
+.project-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e0e0e0; /* Light text */
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); /* Darker shadow on hover */
+}
+
+/* Contact Section */
 .contact {
-  background: #ffffff;
-  padding: 40px 20px;
+  background: #1e1e1e; /* Dark background for contact section */
+  padding: 60px 20px;
   text-align: center;
   border-radius: 10px;
   margin: 40px auto;
   max-width: 600px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.contact h2 {
-  margin-bottom: 20px;
-  font-size: 2rem;
-  color: #333;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Darker shadow */
 }
 
 .form-group {
@@ -86,22 +157,24 @@ header {
 .form-group textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #444; /* Darker border */
   border-radius: 5px;
   font-size: 1rem;
   transition: border-color 0.3s ease;
+  background-color: #333; /* Darker input background */
+  color: #e0e0e0; /* Light text */
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #6200ea;
+  border-color: #bb86fc; /* Accent color for focus */
   outline: none;
 }
 
 button[type="submit"] {
-  background: #6200ea;
-  color: white;
-  padding: 10px 20px;
+  background: #bb86fc; /* Accent color for button */
+  color: #121212; /* Dark text */
+  padding: 12px 24px;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
@@ -110,15 +183,16 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background: #3700b3;
+  background: #9a67ea; /* Darker accent color on hover */
 }
 
+/* Footer */
 footer {
-  background: linear-gradient(135deg, #6200ea, #3700b3);
-  color: white;
+  background: linear-gradient(135deg, #1e1e1e, #121212); /* Dark gradient */
+  color: #ffffff; /* White text */
   text-align: center;
   padding: 40px 20px;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .social-links {
@@ -126,15 +200,15 @@ footer {
 }
 
 .social-links a {
-  color: white;
+  color: #bb86fc; /* Accent color for social links */
   text-decoration: none;
   margin: 0 15px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-  color: #ffcc00; /* Change to your preferred hover color */
+  color: #9a67ea; /* Darker accent color on hover */
 }
 
 footer p {
@@ -142,18 +216,51 @@ footer p {
   font-size: 0.9rem;
 }
 
+/* Animations */
 @keyframes glow {
   0% {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-  }
+    box-shadow: 0 0 10px rgba(187, 134, 252, 0.8);
+  } /* Accent color glow */
   50% {
-    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    box-shadow: 0 0 20px rgba(187, 134, 252, 1);
   }
   100% {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(187, 134, 252, 0.8);
   }
 }
 
 .profile img {
   animation: glow 3s infinite;
+}
+
+/* Light Theme */
+body.light-theme {
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+body.light-theme header {
+  background: linear-gradient(135deg, #6200ea, #3700b3);
+  color: white;
+}
+
+body.light-theme .about,
+body.light-theme .skills,
+body.light-theme .projects,
+body.light-theme .contact {
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .skill-card,
+body.light-theme .project-card {
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+body.light-theme .form-group input,
+body.light-theme .form-group textarea {
+  background-color: white;
+  color: #333;
 }

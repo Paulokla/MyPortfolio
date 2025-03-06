@@ -11,13 +11,25 @@ CORS(app)
 def home():
     return render_template('index.html')
 
-# Example API route
 @app.route('/api/data', methods=['GET'])
 def get_data():
     data = {
         "name": "Okanlawon Paul Feyisayo",
-        "skills": ["Python", "Flask", "HTML", "CSS"],
-        "projects": ["Project 1", "Project 2", "Project 3"]
+        "skills": ["Python", "Flask", "HTML", "CSS", "Java"],
+        "projects": [
+            {
+                "title": "Project 1",
+                "description": "This is a description of Project 1. It showcases my skills in Python and Flask."
+            },
+            {
+                "title": "Project 2",
+                "description": "This is a description of Project 2. It demonstrates my expertise in frontend development."
+            },
+            {
+                "title": "Project 3",
+                "description": "This is a description of Project 3. It highlights my ability to work with databases and APIs."
+            }
+        ]
     }
     return jsonify(data)
 
