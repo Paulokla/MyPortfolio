@@ -15,7 +15,7 @@ def home():
 def get_data():
     data = {
         "name": "Okanlawon Paul Feyisayo",
-        "skills": ["Python", "Flask", "HTML", "CSS", "Java"],
+        "skills": ["Python", "Flask", "HTML", "CSS", "Java", "GIT/GITHUB", "SQL Alchemy", "REST API"],
         "projects": [
             {
                 "title": "Project 1",
