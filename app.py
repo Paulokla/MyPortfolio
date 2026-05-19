@@ -35,8 +35,8 @@ def get_data():
                 "title": "Project 3",
                 "description": "A data-driven application with PostgreSQL database integration, complex SQL queries, and a clean REST API layer.",
                 "tags": ["Python", "PostgreSQL", "REST API"],
-                "github": "",   # Add your GitHub link here
-                "live": ""      # Add your live demo link here
+                "github": "https://github.com/Paulokla/SCMS.git",   # Add your GitHub link here
+                "live": "https://scms-s78l.onrender.com/auth/login"      # Add your live demo link here
             }
         ]
     }
